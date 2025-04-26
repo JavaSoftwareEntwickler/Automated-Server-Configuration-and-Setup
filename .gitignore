@@ -1,0 +1,49 @@
+# Ignora i file di log
+*.log
+
+# Ignora i file temporanei e di backup
+*.bak
+*.swp
+*.tmp
+
+# Ignora i file di sistema di macOS
+.DS_Store
+
+# Ignora le cartelle di sistema di Linux
+**/.directory
+
+# Ignora la cartella dei file di configurazione di WSL (Windows Subsystem for Linux)
+wsl.conf
+
+# Ignora gli script di compilazione e gli output di build
+build/
+dist/
+out/
+
+# Ignora i file di configurazione personalizzati che potrebbero contenere credenziali
+*.env
+*.secrets
+*.key
+*.pem
+*.crt
+
+# Ignora cartelle di backup dei file di editor (es. VS Code, Sublime Text)
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignora la cartella di Terraform che contiene l'infrastruttura dello stato (state)
+.terraform/
+
+# Ignora i file di configurazione di Ansible che potrebbero contenere credenziali sensibili
+*.yml~
+
+# Ignora eventuali file di credenziali AWS (se non utilizzati tramite altri metodi)
+.aws/
+
+# Ignora i file di Vault
+vault-token
+
+# Ignora qualsiasi altro file sensibile o temporaneo
+secrets/
