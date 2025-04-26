@@ -1,4 +1,4 @@
-```markdown
+
 # Progetto DevOps con Strumenti Open-Source
 
 Questo repository contiene gli script di configurazione per un'infrastruttura DevOps completa usando strumenti open-source e gratuiti. Gli script includono configurazioni per l'automazione degli aggiornamenti, backup, monitoraggio, sicurezza, CI/CD, e molto altro.
