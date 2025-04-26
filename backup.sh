@@ -1,18 +1,16 @@
 #!/bin/bash
 
-# Aggiorna il sistema
-sudo apt update
+# Esegui il backup con rclone su Google Drive o altro provider
+echo "Installando rclone per il backup..."
 
-# Installa AWS CLI
-echo "Installando AWS CLI..."
-sudo apt install -y awscli
+# Installa rclone
+sudo apt install -y rclone
 
-# Configura AWS CLI con le credenziali (questo richiede l'accesso AWS)
-echo "Configura AWS CLI con accesso AWS"
-aws configure
+# Configura rclone (richiede la configurazione tramite rclone config)
+echo "Esegui rclone config per configurare il tuo provider di cloud storage."
 
-# Esegui il backup con AWS S3
-echo "Eseguendo il backup su AWS S3..."
-aws s3 sync /var/www s3://my-backup-bucket/ --delete
+# Sincronizza i dati con Google Drive (modifica con il tuo remote e path)
+echo "Eseguendo il backup su Google Drive..."
+rclone sync /var/www remote:backup-folder --delete
 
 echo "Backup completato!"
